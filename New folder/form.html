@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .main {
+            width: 70vw;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        form {
+            height: 200px;
+            width: 450px;
+            display: flex;
+            flex-direction: column;
+            margin: 10px;
+        }
+
+        .form input {
+            margin-top: 10px;
+            width: 50%;
+        }
+
+        .content {
+            text-decoration: underline;
+        }
+        .form:nth-child(1) input[type="text"],
+        .form:nth-child(1) input[type="password"] {
+            height: 50px;
+        }
+        button{
+            margin-top: 10px;
+            width: 51%;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>NCCS</h1>
+    <hr>
+    <div class="main">
+        <div class="form">
+            <form action="action.php" method="POST">
+                <h2>Login</h2>
+                <input type="text" name="username" placeholder="Username" required>
+                <input type="password" name="password" placeholder="password" required>
+                <input type="password" name="cpassword" placeholder="Confirm password" required>
+                <button name="Login">Login</button>
+            </form>
+        </div>
+        <div class="content">
+            <h1>Welcome</h1>
+        </div>
+    </div>
+</body>
+
+</html>
